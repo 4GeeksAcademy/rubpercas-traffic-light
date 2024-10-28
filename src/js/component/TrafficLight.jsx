@@ -36,9 +36,9 @@ const TrafficLight = () => {
 
     const handleLightClick = (color) => {
         setSelectedLight(color);
-        clearInterval(intervalRef.current); // Detenemos el intervalo al hacer clic
-        intervalRef.current = null; // Reiniciamos la referencia
-        setIsPaused(true); // Marcamos como pausado
+        clearInterval(intervalRef.current); 
+        intervalRef.current = null; 
+        setIsPaused(true); 
         console.log("Color seleccionado:", color);
     };
 
