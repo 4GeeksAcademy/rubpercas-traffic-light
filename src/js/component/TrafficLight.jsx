@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
+
 const TrafficLight = () => {
     const [selectedLight, setSelectedLight] = useState(null);
 
@@ -17,6 +18,10 @@ const TrafficLight = () => {
                 <div className={`bg-warning rounded-circle ${selectedLight === 'warning' ? 'selected' : ''}`} style={{ height: "70px", width: "70px" }} onClick={() => handleLightClick('warning')}></div>
                 <div className={`bg-success rounded-circle ${selectedLight === 'success' ? 'selected' : ''}`} style={{ height: "70px", width: "70px" }} onClick={() => handleLightClick('success')}></div>
             </div>
+            {/* <div className="d-flex flex-column align-items-center justify-content-start bg-black rounded-1" style={{ height: "100px", width: "100px" }}>
+                <div className={`bg-primary rounded-circle ${selectedLight === 'primary' ? 'selected' : ''}`} style={{ height: "70px", width: "70px" }} onClick={() => handleLightClick('success')}>
+                </div>
+            </div> */}
         </div>
     )
 }
